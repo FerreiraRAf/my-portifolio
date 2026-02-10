@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+</head>
+<body>
+    <section>
+        <nav>
+            <a href="#aboutme">Sobre mim</a>
+            <a href="#skills">Habilidades</a>
+            <a href="#">Projetos</a>
+        </nav>
+    </section>
+    <main>
+        <section class="perfil">
+            <img  class="flutuando" src="./image/Retrato sério de jovem homem.png" >
+            <div class="Eu">
+                <h1 class="animate__animated animate__backInRight">Rafael da R Ferreira</h1>
+                <h2 class="animate__animated animate__backInRight">I'm Engineer Software</h2>
+                <div class="cvemail">
+                    <button onclick="abrirGmail()"><img src="./image/wired-outline-1141-email-hover-rotation (1).gif" alt="" class="gifs"> Contato</button>
+                    <a href="components/Perfil/Curriculo/Currículo – Rafael da Rosa Ferreira.pdf" download="Currículo – Rafael da Rosa Ferreira.pdf">
+                    <button ><img src="./image/download.gif" alt="" class="gifs"> Download CV</button>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div class="AboutMe" id="aboutme">
+        <div class="box">
+            <h2>Sobre Mim</h2>
+            <p>Sou estudante de Análise e Desenvolvimento de Sistemas, apaixonado por tecnologia desde cedo e atualmente
+            em constante evolução na área de desenvolvimento de software.Tenho experiência acadêmica e prática com Java,
+            Programação Orientada a Objetos, React, JavaScript, Python e bancos de dados, além de vivência com ferramentas 
+            como Git, Postman e Material UI.Já desenvolvi projetos envolvendo APIs, front-end web, back-end, arquitetura 
+            orientada a objetos e boas práticas de programação, sempre buscando código limpo, organização e aprendizado contínuo.
+            Atualmente, busco oportunidades como estagiário ou jovem aprendiz em TI, onde eu possa aplicar meus conhecimentos, 
+            aprender com profissionais da área e crescer como desenvolvedor.🚀 Interesse em desenvolvimento web, software e 
+            tecnologia em geral.</p>
+        </div>
+    </div>
+
+    <div class="Skill" id="skills">
+        <div class="box">
+            <h2>Habilidades</h2>
+
+            <div id="skills-list" class="skills-grid"></div>
+        </div>
+    </div>
+
+    <div class="project">
+        <div class="box">
+            <h2>Projetos</h2>
+            <p>Em breve, estarei compartilhando meus projetos aqui! Fique atento para ver minhas criações e contribuições no mundo do desenvolvimento de software. 🚀</p>
+        </div>
+    </div>
+</body>
+
+<script src="Skills.js"></script>
+</html>
