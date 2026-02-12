@@ -1,14 +1,3 @@
-const skillsList = document.getElementById('skills-list');
-const skills = ['HTML', 'CSS', 'JavaScript', 'React', 'Java', 'SVN', 'Spring Boot'];
-
-skills.forEach(skill => {
-    const card = document.createElement('div');
-    card.classList.add('skill-card');
-    card.textContent = skill;
-
-    skillsList.appendChild(card);
-});
-
 function abrirGmail() {
     const seuEmail = "rafaferreirarosa941@gmail.com";
     const assunto = "Contato Portfólio";
