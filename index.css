@@ -75,11 +75,11 @@ main {
 
 .flutuando {
     animation: flutuar 3s ease-in-out infinite;
-    border: 2px solid #45d50c;
+    border: 2px solid #d0c90a;
     box-shadow:
-    0 0 5px #45d50c,
-    0 0 10px #45d50c,
-    0 0 20px #45d50c;
+    0 0 5px #d0c90a,
+    0 0 10px #d0c90a,
+    0 0 20px #d0c90a;
 }
 
 .Eu {
@@ -117,11 +117,11 @@ h1, h2 {
     color: white;
     border-radius: 5px;
     cursor: pointer;
-        border: 1px solid #45d50c;
+        border: 1px solid #d0c90a;
     box-shadow:
-    0 0 5px #45d50c,
-    0 0 5px #45d50c,
-    0 0 5px #45d50c;
+    0 0 5px #d0c90a,
+    0 0 5px #d0c90a,
+    0 0 5px #d0c90a;
 }
 
 .cvemail button .gifs {
@@ -247,12 +247,85 @@ h1, h2 {
     }
 }
 
-.project {
-    height: 40vh;
+.certificates {
+    min-height: 40vh;
     display: flex;
-    justify-content: center; /* horizontal */
-    align-items: center;     /* vertical */
-    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background: #0f0f0f;
     color: white;
-    background-color: black;
+}
+
+.box {
+    width: 100%;
+    max-width: 1000px;
+}
+
+.box h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.box h2::after {
+    content: "";
+    width: 80px;
+    height: 3px;
+    background: rgb(208, 201, 10);
+    display: block;
+    margin: 10px auto 0;
+    border-radius: 10px;
+}
+
+.certificates-grid {
+    max-width: 350px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+
+    background: #1a1a1a;
+    border: 1px solid #2c2c2c;
+    border-radius: 15px;
+
+    transition: all 0.3s ease;
+}
+
+.certificates-grid:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgb(208, 201, 10);
+
+}
+
+.certificates-grid img {
+    width: 100%;
+    max-width: 280px;
+    border-radius: 10px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.certificates-grid:hover img {
+    transform: scale(1.03);
+}
+
+.certificates-grid p {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #d1d5db;
+    margin: 0;
+}
+
+.project {
+    min-height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #0f0f0f;
+    color: white;
 }
